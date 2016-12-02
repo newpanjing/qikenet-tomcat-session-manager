@@ -1,0 +1,37 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.qikenet.tomcat.session</groupId>
+	<artifactId>qikenet-tomcat-session-manager</artifactId>
+	<version>1.0.0</version>
+	<packaging>pom</packaging>
+
+	<name>qikenet-tomcat-session-manager</name>
+	<url>http://www.qikenet.com</url>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<!-- 指定jdk：运行时、编译版本为1.7 -->
+		<maven.compiler.source>1.7</maven.compiler.source>
+		<maven.compiler.target>1.7</maven.compiler.target>
+		<maven.compiler.compilerVersion>1.7</maven.compiler.compilerVersion>
+	</properties>
+	<modules>
+		<module>qikenet-tomcat7.0.X-session-manager</module>
+		<module>qikenet-tomcat8.0.X-session-manager</module>
+	</modules>
+	<dependencies>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-pool2</artifactId>
+			<version>2.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>redis.clients</groupId>
+			<artifactId>jedis</artifactId>
+			<version>2.3.0</version>
+		</dependency>
+	</dependencies>
+</project>
