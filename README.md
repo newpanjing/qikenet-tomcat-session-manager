@@ -5,10 +5,10 @@ tomcat redis session共享
 #Jar包下载地址：
 https://github.com/newpanjing/qikenet-tomcat-session-manager/tree/master/release
 
-#jar包依赖
-##除了下载qikenet-tomcat-session-manager jar包之外，还需要这两个：
-###1.jedis-2.5.2.jar(redis Java版客户端)
-###2.commons-pool2-2.2.jar(连接池)
+#jar包依赖#
+##除了下载qikenet-tomcat-session-manager jar包之外，还需要这两个：##
+>1.jedis-2.5.2.jar(redis Java版客户端)
+>2.commons-pool2-2.2.jar(连接池)
 
 #新增特性
 1.添加了tomcat8.0.x支持
